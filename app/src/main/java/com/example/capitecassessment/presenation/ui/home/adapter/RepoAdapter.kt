@@ -25,7 +25,7 @@ class RepoAdapter : ListAdapter<repositoriesItem, RepoAdapter.ViewHolder>(RepoDi
 
         fun bind(repo: repositoriesItem) {
 
-            itemBinding.repoName.text = repo.owner.login
+            itemBinding.repoName.text = repo.name
             itemBinding.repoDescription.text = repo.description ?: "No description available"
             itemBinding.repoLink.text = repo.url
             Glide.with(itemBinding.root.context)

@@ -47,8 +47,8 @@ class SearchFragment  : Fragment() {
             adapter.submitList(repos)
         }
 
-        binding.button.setOnClickListener {
-            val query = binding.searchtext.text.toString().trim()
+        binding.SearchBtn.setOnClickListener {
+            val query = binding.searchText.text.toString().trim()
             if (query.isNotEmpty()) {
                 Log.d("SearchFragment", "Search query: $query")
                 viewModel.setRepoName(query)

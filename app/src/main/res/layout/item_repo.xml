@@ -15,7 +15,7 @@
         android:padding="12dp">
 
 
-        <ImageView
+        <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/avatarImage"
             android:layout_width="90dp"
             android:layout_height="90dp"
@@ -42,7 +42,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Repository Name"
-                android:textSize="16sp"
+                android:textSize="12dp"
                 android:fontFamily="@font/lemonada_medium"
                 android:textStyle="bold"
                 android:textColor="@android:color/black"
